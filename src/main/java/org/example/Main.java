@@ -104,6 +104,8 @@ public class Main{
 //                System.out.println("You made " + counter + " guesses");
 //                break;}
 //                  }
+        System.out.println("hello");
+
     }
 }
 
