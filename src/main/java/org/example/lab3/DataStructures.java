@@ -46,12 +46,10 @@ public class DataStructures {
         for (TaskItem task : tasks){
             System.out.println("For task with ID: " + task.task_id + " the description is: " + task.task_description);
         }
-    }
+   }
 
     public static void main(String [] args){
         DataStructures data = new DataStructures();
         data.getDescription();
     }
-
-
 }
