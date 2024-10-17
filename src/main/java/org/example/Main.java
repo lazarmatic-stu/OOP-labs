@@ -1,4 +1,7 @@
 package org.example;
+import java.util.ArrayList;
+import java.util.Random;
+import java.util.Scanner;
 //1.1
 //      System.out.println("My name is John Doe");
 //1.2
@@ -141,4 +144,3 @@ public class Main {
 
     }
 }
-
