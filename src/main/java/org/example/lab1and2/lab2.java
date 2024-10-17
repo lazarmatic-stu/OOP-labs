@@ -1,8 +1,6 @@
-package org.example;
-import javax.sound.midi.Soundbank;
-import java.util.Scanner;
+package org.example.lab1and2;
 
-public class Main{
+public class lab2{
     public static void main(String[] args){
 //1
 //        String password = "secret";
