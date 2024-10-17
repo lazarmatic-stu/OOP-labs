@@ -1,5 +1,4 @@
 package org.example;
-import java.util.Scanner;
 //1.1
 //      System.out.println("My name is John Doe");
 //1.2
@@ -137,8 +136,8 @@ import java.util.Scanner;
 //            }
 //        }
 
-public class Main{
-    public static void main(String[] args){
+public class Main {
+    public static void main(String[] args) {
 
     }
 }
