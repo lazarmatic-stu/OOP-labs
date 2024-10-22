@@ -1,10 +1,22 @@
 package org.example.lab4;
 
+import java.util.List;
+import java.util.ArrayList;
+
+
 public class Main {
+
+    public static void printDepartment(List<Person> people){
+        for (Person person : people){
+            System.out.println(people);
+        }
+    }
+
     public static void main(String [] args){
-        Person pekka = new Person("Pekka Mikkola", "Korsontie Street 1 03100 Vantaa" );
-        Person esko = new Person("Esko Ukkonen", "Mannerheimintie Street 15 00100 Helsinki");
-        System.out.println(pekka);
-        System.out.println(esko);
+        List<Person> people = new ArrayList<Person>();
+        people.add( new Teacher("Pekka Mikkola", "Korsontie Street 1 03100 Vantaa", 1200) );
+        people.add( new Student("Olli", "Ida Albergintie Street 1 00400 Helsinki") );
+        printDepartment(people);
+
     }
 }
