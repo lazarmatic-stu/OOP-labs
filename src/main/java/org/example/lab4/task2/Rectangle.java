@@ -8,6 +8,18 @@ public class Rectangle extends Shape{
         this.width = width;
         this.height = height;
     }
+    public void setWidth(double width){
+        this.width = width;
+    }
+    public double getWidth(){
+        return this.width;
+    }
+    public void setHeight(double height){
+        this.height = height;
+    }
+    public double getHeight(){
+        return this.height;
+    }
     @Override
     public void displayInfo(){
         System.out.println("Color of the rectangle is: " + super.getColor()

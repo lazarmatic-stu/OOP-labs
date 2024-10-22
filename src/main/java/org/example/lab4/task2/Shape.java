@@ -20,6 +20,6 @@ public class Shape {
         return this.fillType;
     }
     public void displayInfo(){
-        System.out.println("Color of the shape is: " + this.color + " \nand the status is: " + this.fillType);
+        System.out.println("Color of the shape is: " + this.color + " \n    and the status is: " + this.fillType);
     }
 }
