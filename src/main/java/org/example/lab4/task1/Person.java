@@ -1,4 +1,4 @@
-package org.example.lab4;
+package org.example.lab4.task1;
 
 public class Person {
     private String name;
@@ -19,6 +19,7 @@ public class Person {
     public void setAddress(String address){
         this.address = address;
     }
+    @Override
     public String toString(){
         return this.name + "\n" +this.address;
     }
