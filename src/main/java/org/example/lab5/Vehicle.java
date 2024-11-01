@@ -32,6 +32,10 @@ abstract class Vehicle {
     public void setHealth(int health){
         this.health = health;
     }
+    @Override
+    public String toString(){
+        return this.getModelName() + " is here!";
+    }
     public abstract String service();
     public abstract int expectedLifespan();
     public boolean needsMaintenance(){
@@ -45,5 +49,24 @@ abstract class Vehicle {
     public void simulateYear(){
         if ((expectedLifespan() / 2) < getMileage()) setHealth(getHealth()-5);
         else setHealth(getHealth()-2);
+    }
+    public void performMaintenence(Vehicle vehicle){
+        if (vehicle instanceof Car){
+            Car newCar = (Car) vehicle;
+            newCar.repair();
+            newCar.drive(500);
+            System.out.println("Maintenence has been performed on CAR " + this.getModelName());
+        }
+        if (vehicle instanceof Truck){
+            Truck newTruck = (Truck) vehicle;
+            newTruck.repair();
+            newTruck.haul(4500);
+            System.out.println("Maintenence has been performed on TRUCK " + this.getModelName());
+        }
+        if (vehicle instanceof Motorcycle){
+            Motorcycle newMotorcycle = (Motorcycle) vehicle;
+            newMotorcycle.race(500);
+            System.out.println("Maintenence has been performed on MOTORCYCLE " + this.getModelName());
+        }
     }
 }
