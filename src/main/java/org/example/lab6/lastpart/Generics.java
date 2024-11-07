@@ -2,6 +2,7 @@ package org.example.lab6.lastpart;
 
 import java.util.ArrayList;
 import java.util.Collections;
+import java.util.HashMap;
 import java.util.List;
 
 public class Generics{
@@ -22,5 +23,22 @@ public class Generics{
             reversedList.add(inputList.get(i));
         }
         return reversedList; // Return the new list
+    }
+
+    // VJEZBA
+    public <T> int firstOccurence(List<T> list , T element){
+        for (int i = 0; i<list.size(); i++){
+            if (list.get(i).equals(element)) return i;
+        }
+        return -1;
+    }
+    public <T> void printingPairs(HashMap<T , T> mapa){
+        ArrayList<String> lista = new ArrayList<>();
+        for (T key : mapa.keySet()){
+            lista.add("Key: " + key + " , " +"value: " + mapa.get(key));
+        }
+        for (String word : lista){
+            System.out.println(word);
+        }
     }
 }
