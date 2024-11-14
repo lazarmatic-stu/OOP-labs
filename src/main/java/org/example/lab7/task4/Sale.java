@@ -39,7 +39,7 @@ public class Sale {
 
     @Override
     public String toString() {
-        return "Sale{" + "productCategory='" + productCategory + '\'' + ", revenue=" + revenue +
+        return "Sale{" + "productCategory= " + productCategory + " , revenue=" + revenue +
                 ", saleDate=" + saleDate + '}';
     }
 }

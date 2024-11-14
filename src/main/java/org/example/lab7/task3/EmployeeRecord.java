@@ -22,7 +22,7 @@ public record EmployeeRecord(String name, String position, double salary, LocalD
         double totalSalary = 0.0;
         int count = 0;
         for (EmployeeRecord employee : employees){
-            if (employee.position.equals(position)){
+            if (employee.position.equalsIgnoreCase(position)){
                 totalSalary += employee.salary;
                 count++;
             }
@@ -32,7 +32,7 @@ public record EmployeeRecord(String name, String position, double salary, LocalD
     public static List<EmployeeRecord> findEmployeesByPosition(List<EmployeeRecord> employees , String position){
         List<EmployeeRecord> filteredEmployees = new ArrayList<>();
         employees.stream()
-                .filter(employee -> employee.position.equals(position))
+                .filter(employee -> employee.position.equalsIgnoreCase(position))
                 .forEach(filteredEmployees::add);
         return filteredEmployees;
     }

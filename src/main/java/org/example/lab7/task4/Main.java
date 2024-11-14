@@ -16,12 +16,9 @@ public class Main {public static void main(String[] args) {
             new Sale("Food", 600.00, LocalDate.of(2023, 6, 5))
     );
 
-
     SalesReport report = new SalesReport();
 
-
     report.generateReport(sales);
-
 
     report.generateReport(sales, "Food");
     report.generateReport(sales, "Cars");
