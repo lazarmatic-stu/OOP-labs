@@ -1,0 +1,10 @@
+2024-12-02 22:34:37 | Event Type: Purchase | User ID: 494
+2024-12-02 22:29:31 | Event Type: Login | User ID: 165
+2024-12-02 22:31:46 | Event Type: Error | User ID: 380
+2024-12-02 22:38:56 | Event Type: Login | User ID: 164
+2024-12-02 22:33:10 | Event Type: Purchase | User ID: 931
+2024-12-02 22:34:15 | Event Type: Logout | User ID: 425
+2024-12-02 22:24:22 | Event Type: Purchase | User ID: 339
+2024-12-02 22:32:34 | Event Type: Error | User ID: 353
+2024-12-02 22:23:59 | Event Type: Login | User ID: 336
+2024-12-02 22:39:55 | Event Type: Purchase | User ID: 306
