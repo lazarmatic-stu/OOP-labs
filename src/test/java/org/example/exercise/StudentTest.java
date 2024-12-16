@@ -7,7 +7,7 @@ import static org.junit.jupiter.api.Assertions.*;
 class StudentTest {
     static Student student;
     @BeforeAll
-    void setup(){
+    static void setup(){
         student = new Student("Lazar" , 20 );
     }
     @Test
@@ -24,7 +24,7 @@ class StudentTest {
     void multipleTests(){
         assertAll("Heading",
                 () -> assertEquals("Lazar" , student.getName()),
-                () -> assertEquals(22 , student.getAge())
+                () -> assertEquals(20 , student.getAge())
                 );
     }
     @AfterAll
