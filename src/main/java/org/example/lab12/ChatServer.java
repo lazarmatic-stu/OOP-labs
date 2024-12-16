@@ -84,7 +84,7 @@ public class ChatServer {
 class ChatApplication {
     public static void main(String[] args) {
         ChatServer chatServer = new ChatServer();
-        chatServer.start(12345); // Change the port number as needed
+        chatServer.start(12345);
     }
 }
 
@@ -97,7 +97,7 @@ class ChatClient {
 
         String username = args[0];
         String serverIP = args[1];
-        int serverPort = 12345; // Use the same port as the server
+        int serverPort = 12345;
 
         try (Socket socket = new Socket(serverIP, serverPort);
              BufferedReader serverReader = new BufferedReader(new InputStreamReader(socket.getInputStream()));
